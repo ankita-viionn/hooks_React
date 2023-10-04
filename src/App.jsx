@@ -21,19 +21,24 @@
 import React, { useState } from "react";
 
 const App = () => {
-
-    //hooks used in useState
-    const state = useState();
-    const [count, setCount] = useState(0);
-
-    const IncNum = () => {
-
-        setCount(count + 1);
-    }
+    //hookes used
+    const [name, setname] = useState("");
+    const [fullname, setFullName] = useState();
+    const inputEvent = (event) => {
+        // console.log(event.target.value);
+        //event used
+        setname(event.target.value)
+    };
+    const onSubmit = () => {
+        setFullName(name);
+    };
     return (
         <>
-            <h1>{count}</h1>
-            <button onClick={IncNum}>click me</button>
+            <div>
+                <h1>Hello {fullname}</h1>
+                <input type="text" placeholder="please fill your name" onChange={inputEvent} value={name}></input>
+                <button onClick={onSubmit}>click me 👍 </button>
+            </div>
         </>
     )
 
