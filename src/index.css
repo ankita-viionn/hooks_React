@@ -47,12 +47,21 @@ button {
   border-radius: 5px;
   text-transform: uppercase;
   cursor: pointer;
-  margin-left: 19px
+  margin-left: 168px
 }
 input[type="text"] {
-    margin-left: 14px;
-    margin: 36px;
-    width: 252px;
-    height: 51px;
-    text-align: center;
+  margin-left: 14px;
+  margin: 56px;
+  width: 400px;
+  height: 63px;
+  text-align: center;
+  padding: -19px;
+}
+form {
+  border: 4px solid #f1f1f1;
+  margin-top: 42px;
+  margin-bottom: 31px;
+  max-width: 489px;
+  padding: -64px;
+  height: 605px;
 }
